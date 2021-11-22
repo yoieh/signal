@@ -3,9 +3,12 @@
       "target": "es5",
       "module": "commonjs",
       "declaration": true,
+      "declarationMap": true,
+      "strict": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
       "outDir": "./lib",
-      "strict": true
     },
     "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"]
+    "exclude": ["node_modules"]
   }
