@@ -18,6 +18,8 @@ export class Signal<Listener extends (...args: any[]) => any> {
   }
 
   dispatch(...args: Parameters<Listener>) {
-    this.listeners.forEach((l) => l(...args));
+    this.listeners.forEach((l: Listener) => {
+      l(...args);
+    });
   }
 }

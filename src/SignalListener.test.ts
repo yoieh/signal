@@ -1,14 +1,14 @@
-import { Signal } from "./Signal";
-import { SignalListener } from "./SignalListener";
+import { Signal } from './Signal';
+import { SignalListener } from './SignalListener';
 
-describe(">>> SignalListener", () => {
+describe('>>> SignalListener', () => {
   let s: Signal<any>;
 
   beforeEach(() => {
     s = new Signal();
   });
 
-  it("should trigger listener function", () => {
+  it('should trigger listener function', () => {
     const spy = jest.fn();
     const l = new SignalListener(s, spy);
     s.dispatch();
@@ -17,8 +17,10 @@ describe(">>> SignalListener", () => {
     l.dispose();
   });
 
-  it("should dispose on dispose", () => {
-    const l = new SignalListener(s, () => {});
+  it('should dispose on dispose', () => {
+    const l = new SignalListener(s, () => {
+      return null;
+    });
 
     expect(s.listeners.length).toBe(1);
     l.dispose();
