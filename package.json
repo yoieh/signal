@@ -16,7 +16,8 @@
     "lib/**/*"
   ],
   "scripts": {
-    "test": "jest --config jestconfig.json --watchAll",
+    "test": "jest --config jestconfig.json",
+    "test:all": "jest --config jestconfig.json --watchAll",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint -c .eslintrc.js --ext .ts ./src",
