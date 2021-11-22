@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yoieh/signal.git"
+    "url": "git+https://github.com/yoieh/signal.git"
   },
   "homepage": "https://yoieh.github.io/signal/",
   "files": [
@@ -41,5 +41,8 @@
     "ts-jest": "^27.0.7",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.5.2"
+  },
+  "bugs": {
+    "url": "https://github.com/yoieh/signal/issues"
   }
 }
