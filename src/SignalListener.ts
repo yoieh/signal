@@ -15,3 +15,5 @@ export class SignalListener<Listener extends (...args: any[]) => any> {
     this.signal.remove(this.listener);
   }
 }
+
+export default SignalListener;

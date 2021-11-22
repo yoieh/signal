@@ -23,3 +23,5 @@ export class Signal<Listener extends (...args: any[]) => any> {
     });
   }
 }
+
+export default Signal;
