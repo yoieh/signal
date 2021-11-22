@@ -1,16 +1,26 @@
 {
   "name": "@yoieh/signal",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "@yoieh/signal",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoieh/signal.git"
+  },
+  "homepage": "https://yoieh.github.io/signal/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
   "devDependencies": {
+    "prettier": "^2.4.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.5.2"
   }
 }
