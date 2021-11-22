@@ -8,12 +8,9 @@ on:
       - "v*"
 
 jobs:
-  tagged-release:
-    name: "Tagged Release"
-    runs-on: "ubuntu-latest"
-
+  test:
+    runs-on: ubuntu-latest
     steps:
-      - name: "Build & test"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
@@ -22,6 +19,12 @@ jobs:
       - run: npm build
       - run: npm test
 
+  tagged-release:
+    needs: test
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
