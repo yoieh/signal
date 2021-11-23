@@ -1,4 +1,4 @@
-import { Signal } from './Signal';
+import { Signal } from '../src/Signal';
 
 describe('>>> Signal', () => {
   let s: Signal<any>;

@@ -1,5 +1,5 @@
-import { Signal } from './Signal';
-import { SignalListener } from './SignalListener';
+import { Signal } from '../src/Signal';
+import { SignalListener } from '../src/SignalListener';
 
 describe('>>> SignalListener', () => {
   let s: Signal<any>;
