@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "keywords": [],
-  "author": "",
+  "author": "yoieh",
   "license": "MIT",
   "repository": {
     "type": "git",
